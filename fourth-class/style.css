@@ -1,0 +1,579 @@
+
+
+
+
+body{
+background-color: cornflowerblue;    text-align: center;
+}
+.vahicle1, .vahicle2{
+    accent-color: rgb(153, 255, 0);
+}
+
+.radio{
+    accent-color: rgb(25, 0, 255);
+    
+}
+.volume{
+accent-color:rgb(0, 221, 255)
+}
+progress{
+    accent-color:red;
+}
+
+.div{
+    width: 150px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: aqua;
+}
+
+.div div{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(42, 42, 165);
+}
+
+
+.maim-div {
+width: 110px;
+height: 300px;
+border: 1px solid black;
+display: flex;
+align-items: center;
+align-items: first ;
+}
+.maim-div div{
+    width: 110px;
+    height: 100px;
+    text-align: center;
+    
+}
+.re{
+    background-color: red;
+}
+    
+   
+.gree{
+    background-color: green;
+  
+    
+}
+.blu{
+    background-color: blue;
+  
+}
+/* aling-center */
+.main{
+   height: 200px;
+   width: 500px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.main div{
+    flex: 1;
+    border: 3px solid rgb(14, 188, 22);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.a{
+background-color: coral;
+height: 30px;
+
+}
+.b{
+    background-color: rgb(107, 146, 159);
+    height: 60px;
+}
+.c{
+    background-color: rgb(32, 90, 125);
+    height: 150px;
+}
+/* align-self */
+.align-self{
+    height: 250px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;align-items: flex-start;
+}
+.align-self div{
+    flex: 1;
+    text-align: center;
+    font-size: 25px;
+}
+
+.my-red{
+    background-color: rgb(158, 99, 99);
+}
+.my-green{
+    background-color: rgb(82, 145, 82);
+}
+.my-blue{
+    background-color: rgb(71, 71, 138);
+}
+.my-blue{
+    align-self: center;
+}
+.my-green{
+    align-self: flex-end;
+}
+
+/* all-property */
+.all p{
+    color: rgb(255, 0, 174);
+    font-size: 25px;
+}
+#ex1{
+    background-color: yellow;
+    color: red;
+}
+#ex2{
+    background-color: yellow;
+    color: red;
+    all:inherit
+}
+#ex3{
+    background-color: yellow;
+    color: red;
+    all:initial
+}
+#ex4{
+    background-color: yellow;
+    color: red;
+    all:unset
+}
+
+
+/* anomation property */
+.animation{
+    height: 150px;
+    width: 150px;
+    background-color: deeppink;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    form{left: 0px;}
+    to{left: 200px;}
+}
+
+
+/* animation delay pro... */
+ #id  {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: mymove 5s infinite;
+        animation-delay: 2s;
+      }
+      
+      @keyframes mymove {
+        from {left: 0px;}
+        to {left: 200px;}
+      }
+/* animation-direcation:alternate */
+.alternate1{
+    height: 150px;
+    width: 150px;
+    background-color: brown;
+    animation-duration: alternate;
+    animation:myfirst 6s 2;
+    position: relative;
+    margin-bottom: 200px;
+}
+@keyframes myfirst{
+0%{background-color: red;left:0px;top:0px;}
+25%{background-color: yellow;left:200px;top:0px;}
+50%{background-color: green;left:200px;top:200px;}
+75%{background-color: blue;left:0px;top:200px;}
+100%{background-color: yellowgreen;left:0px;top:0px;}
+}
+
+
+/* 
+animation-duration  */
+
+.animation-duration{
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 255, 17);
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-delay: 2s;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+   } 
+   /* animation-fill-mode */
+   .fill-mode{ width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymov 3s;
+    animation-fill-mode: forwards;
+    margin-bottom: 150px;
+  }
+  
+  @keyframes mymov {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+  }
+  /* animation-taiming-funcation */
+.animation-taiming-funcation{
+    height: 250px;
+    width: 250px;
+    background-color: yellowgreen;
+    position:relative;
+    animation: mytime 5s infinite;
+    animation-timing-function: linear;
+    margin-bottom: 300px;
+}
+@keyframes mytime{
+    form{top:0px;}
+    to{top:200px;}
+}
+
+/* aspectradio-proparty */
+.aspect-radio-property{
+    width: 150px;
+    background-color: brown;
+    aspect-ratio: 8/15;
+    text-align: center;
+    text-align:center
+    
+}
+/* backdrop-filter-prpoerty*/
+
+
+.background{
+    background-image: url(image/nature2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;;
+    height: 400px;
+
+}
+  
+/* div.background {
+    background: lightblue url(image/wow2.jpg) no-repeat center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+  } */
+  
+div .transbox{
+    background-color:rgba(211, 222, 213, 0.5);
+    backdrop-filter: blur(100px);
+    font-weight: bolder;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+/* the back-face property */
+
+/* div1 {
+
+
+  /* background property */
+
+#background{
+    background-image: url(image/baby.jpg);
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    color: rgba(211, 226, 43, 1);
+    font-weight: bold;
+    font-style: oblique;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    background-position: fixed;
+    
+}
+
+
+/* x-y-position */
+.x-y-position{
+    background-image: url(image/natur1.jpg);
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    margin: auto;
+    background-position-y: center;
+    background-size: 80px 80px;
+    width: 350px;
+    height: 350px;
+}
+/* the block-siz property */
+.block-siz{
+    width: 250px;
+    height: 250px;
+    border: solid black 1px;
+    background-color: rgb(255, 0, 144);
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+.block-siz:hover{background-color:rgba(211, 226, 43, .1);
+color: blueviolet;
+font-size: 50px;
+font-style: italic;
+}
+
+
+
+/* the border property */
+h1{
+    border: 6px solid red;
+    inline-size: 90%;
+    border-block-width:30px;
+    border-block-color: pink;
+}
+h5{
+    border: 5px dotted;
+    border-block-width: 10px;
+    border-block-width:rgb(0, 49, 243);
+    font-size: medium;
+}
+h4{
+    border: 6px double;
+    font-size: 30px;
+}
+
+
+h1,h5,h4{
+    background-color: burlywood;
+}
+
+
+/* border block start property */
+#block-start{
+   border: 6px solid red;
+    background-color: lightseagreen;
+    line-height: 80%;
+    border-block-start: 20px solid yellow;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+
+/* the buttom property */
+
+.parent{
+    border: 5px solid blue;
+    height:250px;
+    position: relative;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.absolute {
+    position: relative;
+    width: 40%;
+    height: 90px;
+    border-radius: 3px;
+    background-color: rgba(211, 226, 43, .6);
+    bottom: 5px;
+    border: 3px solid #8AC007;
+  } 
+div.relative {
+    position: relative;
+    width: 40%;
+    height: 90px;
+    border-radius: 3px;
+    background-color: rgba(211, 226, 43, .4);
+    bottom: 5px;
+    border: 3px solid #8AC007;
+  } 
+  
+  /*div.fixed {
+    position: fixed;
+     width: 40%;
+    height: 90px;
+    border-radius: 3px;
+    background-color: rgba(211, 226, 43, .4);
+    bottom: 10px;
+    border: 3px solid #8AC007;
+  }  */
+  
+  div.sticky {
+    position: sticky;
+    width: 40%;
+    height: 90px;
+    border-radius: 3px;
+    background-color: rgba(211, 226, 43, .3);
+    bottom: 10px;
+    border: 3px solid #8AC007;
+  } 
+
+  strong{
+    font-size: 20px;
+  }
+/* border image */
+.border-img{
+    border: 6px solid black;
+    height: 240px;
+    width: 250px;
+    border-image: url(image/image.png);
+    border-width: 30px;
+    text-align: center;
+    align-items: center;
+     background-color: rgba(211, 226, 43, .3);
+     margin: 0 auto;
+}
+
+/* The box-decoration-break Property */
+
+
+
+   span {
+    border: 5px solid rgb(21, 255, 0);
+    padding:  0em 2em;
+    border-radius: 16px;
+    font-size: 24px;
+    line-height: 2;
+    font-style: italic;
+  }
+  span:hover{
+    border: 5px solid rgb(81, 117, 78);
+    padding:  0em 2em;
+    border-radius: 16px;
+    font-size: 24px;
+    line-height: 2;
+    font-style: italic;
+  }
+  
+  span.ex1 { 
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  
+  span.ex2 { 
+    -webkit-box-decoration-break: slice;
+    -o-box-decoration-break: slice;
+    box-decoration-break: slice;
+  } 
+  h6{
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  /* CSS Box-Reflect< */
+img{
+    background-color: rgba(251, 6, 243, 0.5);
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+
+/* box-shadow property */
+.exam1{
+    border:1px solid black;
+    padding: 15px;
+    box-shadow: 5px 15px rgb(255, 123, 47);
+    width: 90%;
+    font-size: x-large;
+    color: rgb(151, 110, 48);
+}
+.exam2{
+    border:1px solid black;
+    padding: 15px;
+    box-shadow: 5px 15px rgb(255, 123, 47);
+    width: 90%;
+    font-size: x-large;
+    color: rgb(151, 110, 48);
+}
+
+.exam3{
+    border:1px solid black;
+    padding: 15px;
+    box-shadow: 2px 8px rgb(85, 47, 255);
+    width: 90%;
+    font-size: x-large;
+    color: rgb(79, 48, 3);
+}
+.exam1:hover{
+    background-color: rgb(93, 93, 50);
+}
+
+/* bx-siging property */
+.box-sizing{
+    border: 8px solid rgb(57, 9, 232);
+    padding: 20px;
+    height: 250px;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+box-sizing:hover{
+    
+    background-color: blueviolet;
+}
+
+
+/* table caption property */
+caption{
+    font-size: x-large;
+    font-style: italic;
+    border: black solid 2px;
+    color: rgb(255, 60, 0);
+}
+table,th,td{
+    border: 1px solid black;
+    align-items: center;
+    border-collapse: collapse;
+    background-color: blanchedalmond;
+    text-align: center;
+    line-height: 32px;
+    width: 250px;
+    margin: 0 auto;
+}
+th,td:hover{
+    background-color: coral;
+    padding: 1px;
+} 
+caption:hover{
+    background-color: khaki;
+    padding: 2px;
+    background-color: burlywood;
+}
+/* the clear property */
+img{
+    height: 132px;
+    width: 100px;
+    float: right;
+}
+p{
+  float: left;  
+}
+
+
+
+
+
+
+
+
+
+
+
